@@ -1062,8 +1062,30 @@ section {
     z-index: 0;
 }
 
+.project-image-store {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 30%, #2563eb 60%, #60a5fa 100%);
+    position: relative;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.project-image-store::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 25% 35%, rgba(168, 85, 247, 0.3) 0%, transparent 55%),
+        radial-gradient(circle at 75% 65%, rgba(59, 130, 246, 0.35) 0%, transparent 55%),
+        radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.25) 0%, transparent 60%);
+    opacity: 0.75;
+    z-index: 0;
+}
+
 .project-image-farming::after,
-.project-image-fruits::after {
+.project-image-fruits::after,
+.project-image-store::after {
     content: '';
     position: absolute;
     top: 0;
